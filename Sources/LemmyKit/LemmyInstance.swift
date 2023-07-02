@@ -39,17 +39,17 @@ public final class LemmyInstance {
 		do {
 			if T.httpMethod == .get {
 				let queryItemsString = try Self.urlQueryEncoder.encode(apiRequest)
-				if let url = request.url {
+				if let url = request.url, !queryItemsString.isEmpty {
 					request.url = URL(string: url.absoluteString + "?\(queryItemsString)")
 				}
 			} else {
+				request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 				request.httpBody = try Self.jsonEncoder.encode(apiRequest)
 			}
 		} catch {
 			throw LemmyKitError.encode(error, object: apiRequest)
 		}
 
-		request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 		request.setValue("application/json", forHTTPHeaderField: "Accept")
 
 		return request
