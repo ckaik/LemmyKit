@@ -7,20 +7,20 @@ import Foundation
 public struct CustomEmojiInsertForm: Codable {
 	public var localSiteId: Int
 	public var shortcode: String
-	public var imageUrl: URL?
+	public var imageURL: URL?
 	public var altText: String
 	public var category: String
 
 	public init(
 		localSiteId: Int,
 		shortcode: String,
-		imageUrl: URL? = nil,
+		imageURL: URL? = nil,
 		altText: String,
 		category: String
 	) {
 		self.localSiteId = localSiteId
 		self.shortcode = shortcode
-		self.imageUrl = imageUrl
+		self.imageURL = imageURL
 		self.altText = altText
 		self.category = category
 	}
@@ -28,7 +28,7 @@ public struct CustomEmojiInsertForm: Codable {
 	public enum CodingKeys: String, CodingKey {
 		case localSiteId = "local_site_id"
 		case shortcode
-		case imageUrl = "image_url"
+		case imageURL = "image_url"
 		case altText = "alt_text"
 		case category
 	}

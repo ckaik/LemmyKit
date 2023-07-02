@@ -7,17 +7,17 @@ import Foundation
 public struct SiteMetadata: Codable {
 	public var title: String?
 	public var description: String?
-	public var embedVideoUrl: URL?
+	public var embedVideoURL: URL?
 
-	public init(title: String? = nil, description: String? = nil, embedVideoUrl: URL? = nil) {
+	public init(title: String? = nil, description: String? = nil, embedVideoURL: URL? = nil) {
 		self.title = title
 		self.description = description
-		self.embedVideoUrl = embedVideoUrl
+		self.embedVideoURL = embedVideoURL
 	}
 
 	public enum CodingKeys: String, CodingKey {
 		case title
 		case description
-		case embedVideoUrl = "embed_video_url"
+		case embedVideoURL = "embed_video_url"
 	}
 }

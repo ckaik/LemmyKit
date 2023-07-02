@@ -19,11 +19,11 @@ public struct CommunityUpdateForm: Codable {
 	public var lastRefreshedAt: Date?
 	public var icon: String??
 	public var banner: String??
-	public var followersUrl: URL?
-	public var inboxUrl: URL?
-	public var sharedInboxUrl: URL?
-	public var moderatorsUrl: URL?
-	public var featuredUrl: URL?
+	public var followersURL: URL?
+	public var inboxURL: URL?
+	public var sharedInboxURL: URL?
+	public var moderatorsURL: URL?
+	public var featuredURL: URL?
 	public var hidden: Bool?
 	public var postingRestrictedToMods: Bool?
 
@@ -42,11 +42,11 @@ public struct CommunityUpdateForm: Codable {
 		lastRefreshedAt: Date? = nil,
 		icon: String?? = nil,
 		banner: String?? = nil,
-		followersUrl: URL? = nil,
-		inboxUrl: URL? = nil,
-		sharedInboxUrl: URL? = nil,
-		moderatorsUrl: URL? = nil,
-		featuredUrl: URL? = nil,
+		followersURL: URL? = nil,
+		inboxURL: URL? = nil,
+		sharedInboxURL: URL? = nil,
+		moderatorsURL: URL? = nil,
+		featuredURL: URL? = nil,
 		hidden: Bool? = nil,
 		postingRestrictedToMods: Bool? = nil
 	) {
@@ -64,11 +64,11 @@ public struct CommunityUpdateForm: Codable {
 		self.lastRefreshedAt = lastRefreshedAt
 		self.icon = icon
 		self.banner = banner
-		self.followersUrl = followersUrl
-		self.inboxUrl = inboxUrl
-		self.sharedInboxUrl = sharedInboxUrl
-		self.moderatorsUrl = moderatorsUrl
-		self.featuredUrl = featuredUrl
+		self.followersURL = followersURL
+		self.inboxURL = inboxURL
+		self.sharedInboxURL = sharedInboxURL
+		self.moderatorsURL = moderatorsURL
+		self.featuredURL = featuredURL
 		self.hidden = hidden
 		self.postingRestrictedToMods = postingRestrictedToMods
 	}
@@ -88,11 +88,11 @@ public struct CommunityUpdateForm: Codable {
 		case lastRefreshedAt = "last_refreshed_at"
 		case icon
 		case banner
-		case followersUrl = "followers_url"
-		case inboxUrl = "inbox_url"
-		case sharedInboxUrl = "shared_inbox_url"
-		case moderatorsUrl = "moderators_url"
-		case featuredUrl = "featured_url"
+		case followersURL = "followers_url"
+		case inboxURL = "inbox_url"
+		case sharedInboxURL = "shared_inbox_url"
+		case moderatorsURL = "moderators_url"
+		case featuredURL = "featured_url"
 		case hidden
 		case postingRestrictedToMods = "posting_restricted_to_mods"
 	}

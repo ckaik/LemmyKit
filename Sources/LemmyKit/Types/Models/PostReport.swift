@@ -9,7 +9,7 @@ public struct PostReport: Codable {
 	public var creatorId: Int
 	public var postId: Int
 	public var originalPostName: String
-	public var originalPostUrl: URL?
+	public var originalPostURL: URL?
 	public var originalPostBody: String?
 	public var reason: String
 	public var resolved: Bool
@@ -22,7 +22,7 @@ public struct PostReport: Codable {
 		creatorId: Int,
 		postId: Int,
 		originalPostName: String,
-		originalPostUrl: URL? = nil,
+		originalPostURL: URL? = nil,
 		originalPostBody: String? = nil,
 		reason: String,
 		resolved: Bool,
@@ -34,7 +34,7 @@ public struct PostReport: Codable {
 		self.creatorId = creatorId
 		self.postId = postId
 		self.originalPostName = originalPostName
-		self.originalPostUrl = originalPostUrl
+		self.originalPostURL = originalPostURL
 		self.originalPostBody = originalPostBody
 		self.reason = reason
 		self.resolved = resolved
@@ -48,7 +48,7 @@ public struct PostReport: Codable {
 		case creatorId = "creator_id"
 		case postId = "post_id"
 		case originalPostName = "original_post_name"
-		case originalPostUrl = "original_post_url"
+		case originalPostURL = "original_post_url"
 		case originalPostBody = "original_post_body"
 		case reason
 		case resolved

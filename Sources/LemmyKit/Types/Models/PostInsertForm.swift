@@ -18,8 +18,8 @@ public struct PostInsertForm: Codable {
 	public var deleted: Bool?
 	public var embedTitle: String?
 	public var embedDescription: String?
-	public var embedVideoUrl: URL?
-	public var thumbnailUrl: URL?
+	public var embedVideoURL: URL?
+	public var thumbnailURL: URL?
 	public var apId: String?
 	public var local: Bool?
 	public var languageId: Int?
@@ -40,8 +40,8 @@ public struct PostInsertForm: Codable {
 		deleted: Bool? = nil,
 		embedTitle: String? = nil,
 		embedDescription: String? = nil,
-		embedVideoUrl: URL? = nil,
-		thumbnailUrl: URL? = nil,
+		embedVideoURL: URL? = nil,
+		thumbnailURL: URL? = nil,
 		apId: String? = nil,
 		local: Bool? = nil,
 		languageId: Int? = nil,
@@ -61,8 +61,8 @@ public struct PostInsertForm: Codable {
 		self.deleted = deleted
 		self.embedTitle = embedTitle
 		self.embedDescription = embedDescription
-		self.embedVideoUrl = embedVideoUrl
-		self.thumbnailUrl = thumbnailUrl
+		self.embedVideoURL = embedVideoURL
+		self.thumbnailURL = thumbnailURL
 		self.apId = apId
 		self.local = local
 		self.languageId = languageId
@@ -84,8 +84,8 @@ public struct PostInsertForm: Codable {
 		case deleted
 		case embedTitle = "embed_title"
 		case embedDescription = "embed_description"
-		case embedVideoUrl = "embed_video_url"
-		case thumbnailUrl = "thumbnail_url"
+		case embedVideoURL = "embed_video_url"
+		case thumbnailURL = "thumbnail_url"
 		case apId = "ap_id"
 		case local
 		case languageId = "language_id"

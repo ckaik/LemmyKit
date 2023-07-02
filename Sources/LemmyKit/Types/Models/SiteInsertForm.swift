@@ -13,7 +13,7 @@ public struct SiteInsertForm: Codable {
 	public var description: String?
 	public var actorId: String?
 	public var lastRefreshedAt: Date?
-	public var inboxUrl: URL?
+	public var inboxURL: URL?
 	public var privateKey: String?
 	public var publicKey: String?
 	public var instanceId: Int
@@ -27,7 +27,7 @@ public struct SiteInsertForm: Codable {
 		description: String? = nil,
 		actorId: String? = nil,
 		lastRefreshedAt: Date? = nil,
-		inboxUrl: URL? = nil,
+		inboxURL: URL? = nil,
 		privateKey: String? = nil,
 		publicKey: String? = nil,
 		instanceId: Int
@@ -40,7 +40,7 @@ public struct SiteInsertForm: Codable {
 		self.description = description
 		self.actorId = actorId
 		self.lastRefreshedAt = lastRefreshedAt
-		self.inboxUrl = inboxUrl
+		self.inboxURL = inboxURL
 		self.privateKey = privateKey
 		self.publicKey = publicKey
 		self.instanceId = instanceId
@@ -55,7 +55,7 @@ public struct SiteInsertForm: Codable {
 		case description
 		case actorId = "actor_id"
 		case lastRefreshedAt = "last_refreshed_at"
-		case inboxUrl = "inbox_url"
+		case inboxURL = "inbox_url"
 		case privateKey = "private_key"
 		case publicKey = "public_key"
 		case instanceId = "instance_id"

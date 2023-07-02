@@ -6,20 +6,20 @@ import Foundation
 
 public struct CustomEmojiUpdateForm: Codable {
 	public var localSiteId: Int
-	public var imageUrl: URL?
+	public var imageURL: URL?
 	public var altText: String
 	public var category: String
 
-	public init(localSiteId: Int, imageUrl: URL? = nil, altText: String, category: String) {
+	public init(localSiteId: Int, imageURL: URL? = nil, altText: String, category: String) {
 		self.localSiteId = localSiteId
-		self.imageUrl = imageUrl
+		self.imageURL = imageURL
 		self.altText = altText
 		self.category = category
 	}
 
 	public enum CodingKeys: String, CodingKey {
 		case localSiteId = "local_site_id"
-		case imageUrl = "image_url"
+		case imageURL = "image_url"
 		case altText = "alt_text"
 		case category
 	}

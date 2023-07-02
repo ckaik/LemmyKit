@@ -15,7 +15,7 @@ public struct Register: APIRequest {
 	public var passwordVerify: String
 	public var showNSFW: Bool
 	public var email: String?
-	public var captchaUuid: String?
+	public var captchaUUID: String?
 	public var captchaAnswer: String?
 	public var honeypot: String?
 	public var answer: String?
@@ -26,7 +26,7 @@ public struct Register: APIRequest {
 		passwordVerify: String,
 		showNSFW: Bool,
 		email: String? = nil,
-		captchaUuid: String? = nil,
+		captchaUUID: String? = nil,
 		captchaAnswer: String? = nil,
 		honeypot: String? = nil,
 		answer: String? = nil
@@ -36,7 +36,7 @@ public struct Register: APIRequest {
 		self.passwordVerify = passwordVerify
 		self.showNSFW = showNSFW
 		self.email = email
-		self.captchaUuid = captchaUuid
+		self.captchaUUID = captchaUUID
 		self.captchaAnswer = captchaAnswer
 		self.honeypot = honeypot
 		self.answer = answer
@@ -48,7 +48,7 @@ public struct Register: APIRequest {
 		case passwordVerify = "password_verify"
 		case showNSFW = "show_nsfw"
 		case email
-		case captchaUuid = "captcha_uuid"
+		case captchaUUID = "captcha_uuid"
 		case captchaAnswer = "captcha_answer"
 		case honeypot
 		case answer
@@ -62,7 +62,7 @@ public extension LemmyInstance {
 		passwordVerify: String,
 		showNSFW: Bool,
 		email: String? = nil,
-		captchaUuid: String? = nil,
+		captchaUUID: String? = nil,
 		captchaAnswer: String? = nil,
 		honeypot: String? = nil,
 		answer: String? = nil
@@ -73,7 +73,7 @@ public extension LemmyInstance {
 			passwordVerify: passwordVerify,
 			showNSFW: showNSFW,
 			email: email,
-			captchaUuid: captchaUuid,
+			captchaUUID: captchaUUID,
 			captchaAnswer: captchaAnswer,
 			honeypot: honeypot,
 			answer: answer

@@ -8,7 +8,7 @@ public struct CustomEmoji: Codable {
 	public var id: Int
 	public var localSiteId: Int
 	public var shortcode: String
-	public var imageUrl: URL?
+	public var imageURL: URL?
 	public var altText: String
 	public var category: String
 	public var published: Date?
@@ -18,7 +18,7 @@ public struct CustomEmoji: Codable {
 		id: Int,
 		localSiteId: Int,
 		shortcode: String,
-		imageUrl: URL? = nil,
+		imageURL: URL? = nil,
 		altText: String,
 		category: String,
 		published: Date? = nil,
@@ -27,7 +27,7 @@ public struct CustomEmoji: Codable {
 		self.id = id
 		self.localSiteId = localSiteId
 		self.shortcode = shortcode
-		self.imageUrl = imageUrl
+		self.imageURL = imageURL
 		self.altText = altText
 		self.category = category
 		self.published = published
@@ -38,7 +38,7 @@ public struct CustomEmoji: Codable {
 		case id
 		case localSiteId = "local_site_id"
 		case shortcode
-		case imageUrl = "image_url"
+		case imageURL = "image_url"
 		case altText = "alt_text"
 		case category
 		case published

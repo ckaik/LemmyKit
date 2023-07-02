@@ -24,7 +24,7 @@ public struct LocalUser: Codable {
 	public var emailVerified: Bool
 	public var acceptedApplication: Bool
 	public var totp2faSecret: String?
-	public var totp2faUrl: URL?
+	public var totp2faURL: URL?
 
 	public init(
 		id: Int,
@@ -46,7 +46,7 @@ public struct LocalUser: Codable {
 		emailVerified: Bool,
 		acceptedApplication: Bool,
 		totp2faSecret: String? = nil,
-		totp2faUrl: URL? = nil
+		totp2faURL: URL? = nil
 	) {
 		self.id = id
 		self.personId = personId
@@ -67,7 +67,7 @@ public struct LocalUser: Codable {
 		self.emailVerified = emailVerified
 		self.acceptedApplication = acceptedApplication
 		self.totp2faSecret = totp2faSecret
-		self.totp2faUrl = totp2faUrl
+		self.totp2faURL = totp2faURL
 	}
 
 	public enum CodingKeys: String, CodingKey {
@@ -90,6 +90,6 @@ public struct LocalUser: Codable {
 		case emailVerified = "email_verified"
 		case acceptedApplication = "accepted_application"
 		case totp2faSecret = "totp_2fa_secret"
-		case totp2faUrl = "totp_2fa_url"
+		case totp2faURL = "totp_2fa_url"
 	}
 }

@@ -12,7 +12,7 @@ public struct EditCustomEmoji: APIRequest {
 
 	public var id: Int
 	public var category: String
-	public var imageUrl: URL?
+	public var imageURL: URL?
 	public var altText: String
 	public var keywords: [String]
 	public var auth: String
@@ -20,14 +20,14 @@ public struct EditCustomEmoji: APIRequest {
 	public init(
 		id: Int,
 		category: String,
-		imageUrl: URL? = nil,
+		imageURL: URL? = nil,
 		altText: String,
 		keywords: [String],
 		auth: String
 	) {
 		self.id = id
 		self.category = category
-		self.imageUrl = imageUrl
+		self.imageURL = imageURL
 		self.altText = altText
 		self.keywords = keywords
 		self.auth = auth
@@ -36,7 +36,7 @@ public struct EditCustomEmoji: APIRequest {
 	public enum CodingKeys: String, CodingKey {
 		case id
 		case category
-		case imageUrl = "image_url"
+		case imageURL = "image_url"
 		case altText = "alt_text"
 		case keywords
 		case auth
@@ -47,7 +47,7 @@ public extension LemmyInstance {
 	func editCustomEmoji(
 		id: Int,
 		category: String,
-		imageUrl: URL? = nil,
+		imageURL: URL? = nil,
 		altText: String,
 		keywords: [String],
 		auth: String
@@ -55,7 +55,7 @@ public extension LemmyInstance {
 		try await request(EditCustomEmoji(
 			id: id,
 			category: category,
-			imageUrl: imageUrl,
+			imageURL: imageURL,
 			altText: altText,
 			keywords: keywords,
 			auth: auth

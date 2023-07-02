@@ -20,8 +20,8 @@ public struct Person: Codable {
 	public var lastRefreshedAt: Date?
 	public var banner: String?
 	public var deleted: Bool
-	public var inboxUrl: URL?
-	public var sharedInboxUrl: URL?
+	public var inboxURL: URL?
+	public var sharedInboxURL: URL?
 	public var matrixUserId: String?
 	public var admin: Bool
 	public var botAccount: Bool
@@ -44,8 +44,8 @@ public struct Person: Codable {
 		lastRefreshedAt: Date? = nil,
 		banner: String? = nil,
 		deleted: Bool,
-		inboxUrl: URL? = nil,
-		sharedInboxUrl: URL? = nil,
+		inboxURL: URL? = nil,
+		sharedInboxURL: URL? = nil,
 		matrixUserId: String? = nil,
 		admin: Bool,
 		botAccount: Bool,
@@ -67,8 +67,8 @@ public struct Person: Codable {
 		self.lastRefreshedAt = lastRefreshedAt
 		self.banner = banner
 		self.deleted = deleted
-		self.inboxUrl = inboxUrl
-		self.sharedInboxUrl = sharedInboxUrl
+		self.inboxURL = inboxURL
+		self.sharedInboxURL = sharedInboxURL
 		self.matrixUserId = matrixUserId
 		self.admin = admin
 		self.botAccount = botAccount
@@ -92,8 +92,8 @@ public struct Person: Codable {
 		case lastRefreshedAt = "last_refreshed_at"
 		case banner
 		case deleted
-		case inboxUrl = "inbox_url"
-		case sharedInboxUrl = "shared_inbox_url"
+		case inboxURL = "inbox_url"
+		case sharedInboxURL = "shared_inbox_url"
 		case matrixUserId = "matrix_user_id"
 		case admin
 		case botAccount = "bot_account"

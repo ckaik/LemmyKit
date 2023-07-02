@@ -19,10 +19,10 @@ public struct Post: Codable {
 	public var nsfw: Bool
 	public var embedTitle: String?
 	public var embedDescription: String?
-	public var thumbnailUrl: URL?
+	public var thumbnailURL: URL?
 	public var apId: String
 	public var local: Bool
-	public var embedVideoUrl: URL?
+	public var embedVideoURL: URL?
 	public var languageId: Int
 	public var featuredCommunity: Bool
 	public var featuredLocal: Bool
@@ -42,10 +42,10 @@ public struct Post: Codable {
 		nsfw: Bool,
 		embedTitle: String? = nil,
 		embedDescription: String? = nil,
-		thumbnailUrl: URL? = nil,
+		thumbnailURL: URL? = nil,
 		apId: String,
 		local: Bool,
-		embedVideoUrl: URL? = nil,
+		embedVideoURL: URL? = nil,
 		languageId: Int,
 		featuredCommunity: Bool,
 		featuredLocal: Bool
@@ -64,10 +64,10 @@ public struct Post: Codable {
 		self.nsfw = nsfw
 		self.embedTitle = embedTitle
 		self.embedDescription = embedDescription
-		self.thumbnailUrl = thumbnailUrl
+		self.thumbnailURL = thumbnailURL
 		self.apId = apId
 		self.local = local
-		self.embedVideoUrl = embedVideoUrl
+		self.embedVideoURL = embedVideoURL
 		self.languageId = languageId
 		self.featuredCommunity = featuredCommunity
 		self.featuredLocal = featuredLocal
@@ -88,10 +88,10 @@ public struct Post: Codable {
 		case nsfw
 		case embedTitle = "embed_title"
 		case embedDescription = "embed_description"
-		case thumbnailUrl = "thumbnail_url"
+		case thumbnailURL = "thumbnail_url"
 		case apId = "ap_id"
 		case local
-		case embedVideoUrl = "embed_video_url"
+		case embedVideoURL = "embed_video_url"
 		case languageId = "language_id"
 		case featuredCommunity = "featured_community"
 		case featuredLocal = "featured_local"
