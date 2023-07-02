@@ -4,7 +4,7 @@
 
 import Foundation
 
-public enum CommentSortType: String, Codable, CaseIterable, CustomStringConvertible {
+public enum CommentSortType: String, Codable, CaseIterable {
 	case hot = "Hot"
 	case top = "Top"
 	case new = "New"

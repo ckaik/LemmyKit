@@ -4,7 +4,7 @@
 
 import Foundation
 
-public enum SortType: String, Codable, CaseIterable, CustomStringConvertible {
+public enum SortType: String, Codable, CaseIterable {
 	case active = "Active"
 	case hot = "Hot"
 	case new = "New"

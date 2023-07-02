@@ -4,7 +4,7 @@
 
 import Foundation
 
-public enum ListingType: String, Codable, CaseIterable, CustomStringConvertible {
+public enum ListingType: String, Codable, CaseIterable {
 	case all = "All"
 	case local = "Local"
 	case subscribed = "Subscribed"

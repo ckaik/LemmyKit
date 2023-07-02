@@ -4,7 +4,7 @@
 
 import Foundation
 
-public enum EndpointType: String, Codable, CaseIterable, CustomStringConvertible {
+public enum EndpointType: String, Codable, CaseIterable {
 	case community = "Community"
 	case person = "Person"
 	case post = "Post"

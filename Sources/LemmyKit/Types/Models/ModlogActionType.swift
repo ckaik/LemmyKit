@@ -4,7 +4,7 @@
 
 import Foundation
 
-public enum ModlogActionType: String, Codable, CaseIterable, CustomStringConvertible {
+public enum ModlogActionType: String, Codable, CaseIterable {
 	case all = "All"
 	case modremovepost = "ModRemovePost"
 	case modlockpost = "ModLockPost"
